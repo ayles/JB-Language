@@ -7,7 +7,6 @@ fun main(args: Array<String>) {
         if (line == null || line.isEmpty()) break
         src += line + "\n"
     }
-    println(src)
     val parser = Parser(TokenStream(src))
     try {
         print(parser.compute())
